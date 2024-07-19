@@ -82,3 +82,64 @@
         height: auto;
     }
 }
+
+
+
+/* OLD VERSION OF CSS */
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        gap: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header {
+        grid-row: 1;
+        grid-column: 1;
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .nav_bar {
+        grid-row: 2;
+        grid-column: 1;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .nav_home, .nav_profile, .nav_about {
+        width: 100%;
+    }
+
+    .main {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .section_1 {
+        grid-row: 1;
+    }
+
+    .section_2 {
+        grid-row: 2;
+    }
+
+    .footer {
+        grid-row: 4;
+        grid-column: 1;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer_contact_us, .footer_events, .footer_blog {
+        width: 100%;
+    }
+}
